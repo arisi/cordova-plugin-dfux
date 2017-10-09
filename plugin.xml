@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-dfu" version="0.1.0">
+    <name>Dfu</name>
+    <description>Cordova Dfu Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,dfu</keywords>
+    <js-module src="www/dfu.js" name="dfu">
+        <clobbers target="Dfu" />
+    </js-module>
+    <platform name="android">
+    <config-file target="config.xml" parent="/*">
+        <feature name="Dfu">
+            <param name="android-package" value="fi.lsn.cordova.plugin.Dfu"/>
+        </feature>
+    </config-file>
+
+    <source-file src="src/android/Dfu.java" target-dir="src/lsn/cordova/plugin" />
+</platform>
+</plugin>
