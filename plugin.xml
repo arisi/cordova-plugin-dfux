@@ -15,6 +15,6 @@
         </feature>
     </config-file>
 
-    <source-file src="src/android/Dfu.java" target-dir="src/lsn/cordova/plugin" />
+    <source-file src="src/android/Dfu.java" target-dir="src/com/example/" />
 </platform>
 </plugin>
